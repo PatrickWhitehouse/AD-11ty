@@ -4,7 +4,7 @@
   "description": "AD Supplies Site built with 11ty",
   "main": "index.js",
   "scripts": {
-		"clean": "rimraf public src/css/styles.css",
+		"clean": "rimraf public",
 		"dev": "eleventy --serve",
 		"build": "eleventy"
 	},
@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/PatrickWhitehouse/AD-11ty#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^2.2.10"
   }
 }
