@@ -4,8 +4,10 @@
   "description": "AD Supplies Site built with 11ty",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+		"clean": "rimraf public src/css/styles.css",
+		"dev": "eleventy --serve",
+		"build": "eleventy"
+	},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PatrickWhitehouse/AD-11ty.git"
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/PatrickWhitehouse/AD-11ty/issues"
   },
-  "homepage": "https://github.com/PatrickWhitehouse/AD-11ty#readme"
+  "homepage": "https://github.com/PatrickWhitehouse/AD-11ty#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
 }
