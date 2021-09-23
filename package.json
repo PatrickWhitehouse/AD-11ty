@@ -4,9 +4,9 @@
   "description": "AD Supplies Site built with 11ty",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf public",
-    "dev": "eleventy --serve",
-    "build": "eleventy"
+    "clean": "rimraf public src/css/styles.css",
+    "dev": "npm run clean && postcss src/css/tailwind.css -o src/css/styles.css && eleventy --serve",
+    "build": "npm run clean && NODE_ENV=production postcss src/css/tailwind.css -o src/css/styles.css && eleventy"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,9 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "autoprefixer": "^10.3.5",
+    "cssnano": "^5.0.8",
     "postcss": "^8.3.7",
+    "postcss-cli": "^8.3.1",
     "rimraf": "^3.0.2",
     "tailwindcss": "^2.2.15"
   }
