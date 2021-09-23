@@ -4,10 +4,10 @@
   "description": "AD Supplies Site built with 11ty",
   "main": "index.js",
   "scripts": {
-		"clean": "rimraf public",
-		"dev": "eleventy --serve",
-		"build": "eleventy"
-	},
+    "clean": "rimraf public",
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PatrickWhitehouse/AD-11ty.git"
@@ -21,7 +21,9 @@
   "homepage": "https://github.com/PatrickWhitehouse/AD-11ty#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.3.5",
+    "postcss": "^8.3.7",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^2.2.10"
+    "tailwindcss": "^2.2.15"
   }
 }
