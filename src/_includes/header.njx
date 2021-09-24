@@ -1,0 +1,8 @@
+<nav class="container mx-auto">
+    <ul class="flex justify-end">
+        <li class="mr-auto"><a href="/">AD Supplies</a></li>
+        <li class="mr-5"><a href="/about">About</a></li>
+        <li class="mr-5"><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
