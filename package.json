@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf public src/css/styles.css",
-    "dev": "npm run clean && postcss src/css/tailwind.css -o src/css/styles.css && eleventy --serve",
-    "build": "npm run clean && NODE_ENV=production postcss src/css/tailwind.css -o src/css/styles.css && eleventy"
+    "dev": "npm run clean && postcss src/css/tailwind.css > src/css/styles.css && eleventy --serve",
+    "build": "npm run clean && NODE_ENV=production postcss src/css/tailwind.css > src/css/styles.css && eleventy"
   },
   "repository": {
     "type": "git",
