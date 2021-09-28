@@ -8,3 +8,11 @@ a {
     text-decoration-color: #60FCA2;
     text-decoration-thickness: 3px;
 }
+
+main p {
+    @apply mb-3;
+}
+
+h1 {
+    @apply mb-4 text-3xl;
+}
