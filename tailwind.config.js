@@ -15,11 +15,19 @@ module.exports = {
           DEFAULT: '#34D0B2',
           light: '#60FCA2'
         }
-    }
+    },
+      fontFamily: {
+          sans: ['Poppins', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont']
+      }
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('daisyui')
+  ],
+  daisyui: {
+      themes: false
+  }
 }
 

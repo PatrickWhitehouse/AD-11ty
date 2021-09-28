@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,4 +6,12 @@
 a {
   @apply font-bold text-green;
   border-bottom: 2px solid #34D0B2;
+}
+
+main p {
+    @apply mb-3;
+}
+
+h1 {
+    @apply mb-4 text-3xl;
 }
