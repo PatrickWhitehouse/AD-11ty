@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 a {
-    @apply font-bold text-green underline;
+    @apply text-green underline;
     text-decoration-color: #60FCA2;
     text-decoration-thickness: 3px;
 }
