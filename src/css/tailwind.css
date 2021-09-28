@@ -3,10 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-a {
-    @apply text-green underline;
-    text-decoration-color: #60FCA2;
-    text-decoration-thickness: 3px;
+.links {
+    @apply text-gray;
+    border-bottom: 2px solid darkgreen;
 }
 
 main p {
