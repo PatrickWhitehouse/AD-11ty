@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.links {
+a {
     @apply text-gray;
     border-bottom: 2px solid darkgreen;
 }
