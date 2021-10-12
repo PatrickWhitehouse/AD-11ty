@@ -14,42 +14,51 @@ permalink: /services/
 <p>
         Some of the ways we can help.
 </p>
-<div class="cards my-20 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div class="card text-center shadow-2xl  bg-green text-white">
-                <div class="card-body">
-                        <span>Bespoke waste storage and waste removal solutions</span>
+<!-- Slider main container -->
+<div class="swiper my-20" style="height: 500px">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide card text-center shadow-2xl  bg-green text-white">
+                        <div class="card-body justify-center">
+                                <span>Bespoke waste storage and waste removal solutions</span>
+                        </div>
+                </div>
+                <div class="swiper-slide card text-center shadow-2xl  bg-green text-white">
+                        <div class="card-body justify-center">
+                                <span>Liquid waste collections and semi dry waste collections</span>
+                        </div>
+                </div>
+                <div class="swiper-slide card text-center shadow-2xl  bg-green text-white">
+                        <div class="card-body justify-center">
+                                <span>Bulk marine cargo salvage and removal</span>
+                        </div>
+                </div>
+                <div class="swiper-slide card text-center shadow-2xl  bg-green text-white">
+                        <div class="card-body justify-center">
+                                <span>Emergency waste removal</span>
+                        </div>
+                </div>
+                <div class="swiper-slide card text-center shadow-2xl  bg-green text-white">
+                        <div class="card-body justify-center">
+                                <span>Packaged food waste collections</span>
+                        </div>
+                </div>
+                <div class="swiper-slide card text-center shadow-2xl  bg-green text-white">
+                        <div class="card-body justify-center">
+                                <span>Catering waste collections</span>
+                        </div>
+                </div>
+                <div class="swiper-slide card text-center shadow-2xl  bg-green text-white">
+                        <div class="card-body justify-center">
+                                <span>IBC, Dolav, Skip storage and collection</span>
+                        </div>
                 </div>
         </div>
-        <div class="card text-center shadow-2xl  bg-green text-white">
-                <div class="card-body justify-center">
-                        <span>Liquid waste collections and semi dry waste collections</span>
-                </div>
-        </div>
-        <div class="card text-center shadow-2xl  bg-green text-white">
-                <div class="card-body justify-center">
-                        <span>Bulk marine cargo salvage and removal</span>
-                </div>
-        </div>
-        <div class="card text-center shadow-2xl  bg-green text-white">
-                <div class="card-body justify-center">
-                        <span>Emergency waste removal</span>
-                </div>
-        </div>
-        <div class="card text-center shadow-2xl  bg-green text-white">
-                <div class="card-body justify-center">
-                        <span>Packaged food waste collections</span>
-                </div>
-        </div>
-        <div class="card text-center shadow-2xl  bg-green text-white">
-                <div class="card-body justify-center">
-                        <span>Catering waste collections</span>
-                </div>
-        </div>
-        <div class="card text-center shadow-2xl  bg-green text-white">
-                <div class="card-body justify-center">
-                        <span>IBC, Dolav, Skip storage and collection</span>
-                </div>
-        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 </div>
 <p>
         We have an agile team happy to talk through your individual circumstances or make a visit to your site. We can
@@ -59,38 +68,33 @@ permalink: /services/
         reduce cost.
 </p>
 
-<!-- Slider main container -->
-<div class="swiper" style="height: 500px">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-</div>
 
 <script>
         const swiper = new Swiper('.swiper', {
                 // Optional parameters
                 direction: 'horizontal',
                 loop: true,
-
-                // If we need pagination
-                pagination: {
-                        el: '.swiper-pagination',
+                slidesPerView: 1,
+                autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false
                 },
 
                 // Navigation arrows
                 navigation: {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                        768: {
+                                slidesPerView: 2,
+                                spaceBetween: 40,
+                        },
+                        1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 40,
+                        }
                 }
         });
 </script>
