@@ -8,6 +8,10 @@
         <meta name="description" content="{{description}}">
         <title>{% if title %}{{title}} - {% endif %}AD Supplies: Waste Management & Recycling for Energy</title>
         <link rel="stylesheet" href="/css/styles.css">
+        {% if 'service' in page.fileSlug %}
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        {% endif %}
     </head>
 
     <body class="bg-white text-gray leading-loose p-12 min-h-screen flex flex-col">
