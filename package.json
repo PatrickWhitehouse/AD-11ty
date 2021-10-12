@@ -29,5 +29,7 @@
     "rimraf": "^3.0.2",
     "tailwindcss": "^2.2.15"
   },
-  "dependencies": {}
+  "dependencies": {
+    "eleventy-plugin-seo": "^0.5.2"
+  }
 }
